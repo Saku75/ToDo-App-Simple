@@ -1,0 +1,25 @@
+#tasks {
+	text-align: center;
+	list-style: none;
+}
+
+#tasks li p {
+	font-size: 2rem;
+}
+#tasks li p::first-letter {
+	text-transform: capitalize;
+}
+
+#tasks li {
+	padding: 1rem 0;
+}
+#tasks li:first-child {
+	border-top: 1px solid var(--border-color);
+}
+#tasks li:last-child {
+	border-bottom: 1px solid var(--border-color);
+}
+
+#tasks li button {
+	margin: 0.5rem 0.5rem;
+}

@@ -1,0 +1,10 @@
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+form h2 {
+	text-align: center;
+}

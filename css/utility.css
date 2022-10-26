@@ -1,0 +1,8 @@
+.hidden {
+	display: none;
+}
+
+.done > p {
+	text-decoration: line-through;
+	color: var(--done-color);
+}

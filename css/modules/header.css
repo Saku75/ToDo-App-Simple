@@ -1,0 +1,10 @@
+header {
+	padding: 1rem;
+	width: 100%;
+	box-shadow: var(--shadow-color) 0 0 0.5rem;
+}
+
+header button img {
+	width: 2rem;
+	height: 2rem;
+}

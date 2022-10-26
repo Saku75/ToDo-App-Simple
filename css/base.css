@@ -1,0 +1,61 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+input,
+button,
+input::file-selector-button {
+	background: none;
+	border: none;
+	outline: none;
+	color: var(--text-color);
+	padding: 0.5rem;
+	border-radius: 10rem;
+	box-shadow: var(--shadow-color) 0 0 0.5rem;
+}
+
+input[type="text"] {
+	border: 1px solid var(--border-color);
+	box-shadow: var(--shadow-color) 0 0 0.5rem;
+}
+
+input::file-selector-button {
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
+input:hover,
+button:hover,
+input::file-selector-button:hover,
+input:focus,
+button:focus,
+input::file-selector-button:focus {
+	background-color: var(--background-color-hover);
+	color: var(--text-color-hover);
+	box-shadow: var(--shadow-color-hover) 0 0 0.5rem;
+}
+
+input:active,
+button:active,
+input::file-selector-button:active {
+	background-color: var(--background-color-active);
+	color: var(--text-color-active);
+}
+
+button {
+	cursor: pointer;
+}
+
+input::file-selector-button {
+	cursor: pointer;
+}

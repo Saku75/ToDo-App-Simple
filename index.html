@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ToDo</title>
+
+		<!-- PWA -->
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="theme-color" content="#333" />
+		<link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+		<link rel="apple-touch-icon" sizes="192x192" href="/icons/apple-touch-icon.png" />
+
+		<!-- JS -->
+		<script src="js/swInit.js" async></script>
+		<script type="module" src="/js/main.js" defer crossorigin="anonymous"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>ToDo</h1>
+			<button id="theme-switcher">Theme Switcher</button>
+		</header>
+		<button id="show-hide-form">Create new todo</button>
+		<form id="create-form" class="hidden">
+			<h2>Create new todo</h2>
+			<input type="text" name="task" required placeholder="Buy milk..." />
+			<button type="submit">Add to list</button>
+		</form>
+		<form id="edit-form" class="hidden">
+			<h2>Edit todo</h2>
+			<input type="text" name="task" required />
+			<button type="submit">Save</button>
+		</form>
+		<ul id="tasks"></ul>
+		<section class="transfer-section">
+			<h2>Transfer data</h2>
+			<label for="download">Download Tasks</label>
+			<button id="download">Download</button>
+			<label for="upload">Upload Tasks</label>
+			<input type="file" id="upload" />
+		</section>
+	</body>
+</html>

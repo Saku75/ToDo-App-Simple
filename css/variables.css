@@ -1,0 +1,25 @@
+.dark:root {
+	--background-color: #222;
+	--background-color-hover: #333;
+	--background-color-active: #111;
+	--text-color: #ddd;
+	--text-color-hover: #fff;
+	--text-color-active: #ccc;
+	--done-color: #0f0;
+	--shadow-color: #000;
+	--shadow-color-hover: #111;
+	--border-color: #333;
+}
+
+.light:root {
+	--background-color: #eee;
+	--background-color-hover: #ddd;
+	--background-color-active: #fff;
+	--text-color: #333;
+	--text-color-hover: #111;
+	--text-color-active: #222;
+	--done-color: #0d0;
+	--shadow-color: #ccc;
+	--shadow-color-hover: #bbb;
+	--border-color: #ccc;
+}
